@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>De Brujn graphs visualization</title>
+
+    <script type="text/javascript" src="3rdParty/vis.min.js"></script>
+    <link href="3rdParty/vis.min.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        #mynetwork {
+            width: 900px;
+            height: 400px;
+            border: 1px solid lightgray;
+        }
+    </style>
+
+    <script src="debruijn.js"></script>
+</head>
+
+<body>
+    <h3>Visualizing small de Brujn graphs of genome reads</h3>
+
+    <hr>
+    <label for="k_size">Size of kmer: </label>
+    <input type="number" id="k_size" value="3"><br>
+
+    <label for="network_width"> Width: </label>
+    <input type="number" id="network_width" value="900"><br>
+
+    <label for="network_height"> Height: </label>
+    <input type="number" id="network_height" value="400"><br>
+
+    Enter genome reads. Valid input symbols: ['A', 'C', 'G', 'T', '\n'] <br>
+    <textarea id="genome_reads" rows='4' cols='100'></textarea><br>
+
+    <button onclick="processAndDisplay()">Display</button>
+    <hr>
+
+    <div id="mynetwork" style="min-width:900px;"></div>
+
+    <script type="text/javascript">
+        var defaultReads = "AACG\nAAGG\nACGT\nAGGT\nCGTT\nGCAA\nGGTT\nGTTG\nTGCA\nTTGC";
+        document.getElementById("genome_reads").value = defaultReads;
+
+        function processAndDisplay() {
+            if (!validateReadsString(document.getElementById("genome_reads").value))
+                return alert("Wrong input!");
+
+            const reads = document.getElementById("genome_reads").value.split("\n");
+            const k = parseInt(document.getElementById("k_size").value);
+
+            if(readsMin(reads).length < k)
+                return alert("Too big kmer size");
+
+            const style = "width: " + document.getElementById("network_width").value +
+                "; height: " + document.getElementById("network_height").value;
+            document.getElementById("mynetwork").setAttribute("style", style);
+
+            visualizeNetwork(toNetworkData(makeGraph(k, reads)));
+        }
+    </script>
+</body>
+
+</html>
