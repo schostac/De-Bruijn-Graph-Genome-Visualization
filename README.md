@@ -1,2 +1,2 @@
 # De-Bruijn-Graph-Genome-Visualization
-Builds de Bruijn graph from small genome reads and visualizes it browser using vis.js
+Builds de Bruijn graph from genome reads and visualizes in browser using vis.js
