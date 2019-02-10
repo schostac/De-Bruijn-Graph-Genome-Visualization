@@ -18,7 +18,7 @@ TGCA
 TTGC
 ```
 We can observe the graph is cyclic and has one bubble.
-![Example](https://github.com/AndriiShostatskyi/De-Bruijn-Graph-Genome-Visualization/blob/master/imgExps/GraphExample1.png)
+![Example](https://github.com/AndriiShostatskyi/De-Bruijn-Graph-Genome-Visualization/blob/master/imgExps/GraphExample_1.png)
 
 #### Example of visualization # 2
 Kmer size is 7. Input:
@@ -26,8 +26,8 @@ Kmer size is 7. Input:
 AAAAAAAAAAAAAATATTTTTATTAAATAATTAAAATAAGAAAAAATAAAAA
 ```
 We can observe the graph has bubbles and a tip.
-![](https://github.com/AndriiShostatskyi/De-Bruijn-Graph-Genome-Visualization/blob/master/imgExps/GraphExample2.png)
+![](https://github.com/AndriiShostatskyi/De-Bruijn-Graph-Genome-Visualization/blob/master/imgExps/GraphExample_2.png)
 
 ### Example of visualization # 3
 We can observe the graph is quite dense, has bubbles and tips.
-![](https://github.com/AndriiShostatskyi/De-Bruijn-Graph-Genome-Visualization/blob/master/imgExps/GraphExample3.png)
+![](https://github.com/AndriiShostatskyi/De-Bruijn-Graph-Genome-Visualization/blob/master/imgExps/GraphExample_3.png)
