@@ -4,6 +4,19 @@ Builds de Bruijn graph from genome reads and visualizes in browser using vis.js.
 In order to use it, simply open index.html, select kmer size, width and height of network canvas, and provide reads of genome; then click on 'Display'. Kmers are displayed as edges between nodes.
 
 #### Example of visualization # 1
+K = 3. Input:
+'''
+AACG
+AAGG
+ACGT
+AGGT
+CGTT
+GCAA
+GGTT
+GTTG
+TGCA
+TTGC
+'''
 We can observe the graph is cyclic and has one bubble.
 ![Example](https://github.com/AndriiShostatskyi/De-Bruijn-Graph-Genome-Visualization/blob/master/imgExps/GraphExample1.png)
 
