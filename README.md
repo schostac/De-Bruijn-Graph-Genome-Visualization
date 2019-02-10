@@ -5,7 +5,7 @@ In order to use it, simply open index.html, select kmer size, width and height o
 
 #### Example of visualization # 1
 K = 3. Input:
-'''
+```python
 AACG
 AAGG
 ACGT
@@ -16,6 +16,7 @@ GGTT
 GTTG
 TGCA
 TTGC
+```
 '''
 We can observe the graph is cyclic and has one bubble.
 ![Example](https://github.com/AndriiShostatskyi/De-Bruijn-Graph-Genome-Visualization/blob/master/imgExps/GraphExample1.png)
