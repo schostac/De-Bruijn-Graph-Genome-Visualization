@@ -8,8 +8,9 @@ We can observe the graph is cyclic and has one bubble.
 ![Example](https://github.com/AndriiShostatskyi/De-Bruijn-Graph-Genome-Visualization/blob/master/imgExps/GraphExample1.png)
 
 #### Example of visualization # 2
-We can observer the graph has bubbles and a tip.
+We can observe the graph has bubbles and a tip.
 ![](https://github.com/AndriiShostatskyi/De-Bruijn-Graph-Genome-Visualization/blob/master/imgExps/GraphExample2.png)
 
 ### Example of visualization # 3
+We can observe the graph is quite dense, has bubbles and tips.
 ![](https://github.com/AndriiShostatskyi/De-Bruijn-Graph-Genome-Visualization/blob/master/imgExps/GraphExample3.png)
